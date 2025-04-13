@@ -1,0 +1,49 @@
+CREATE TABLE `travel-sample`.`inventory`.`hotel` (
+    id              INT           NOT NULL PRIMARY KEY,
+    title           TEXT          NOT NULL,
+    name            TEXT          NOT NULL,
+    address         TEXT          NOT NULL,
+    directions      TEXT          NULL,
+    phone           TEXT          NULL,
+    tollfree        TEXT          NULL,
+    email           TEXT          NULL,
+    fax             TEXT          NULL,
+    url             TEXT          NULL,
+    checkin         TEXT          NULL,
+    checkout        TEXT          NULL,
+    price           TEXT          NULL,
+    geo_lat         NUMERIC(10, 6) NOT NULL,
+    geo_lon         NUMERIC(10, 6) NOT NULL,
+    geo_accuracy    TEXT          NULL,
+    type            TEXT          NOT NULL,
+    country         TEXT          NOT NULL,
+    city            TEXT          NOT NULL,
+    state           TEXT          NULL,
+    vacancy         BOOLEAN       NOT NULL,
+    description     TEXT          NULL,
+    alias           TEXT          NULL,
+    pets_ok         BOOLEAN       NOT NULL,
+    free_breakfast  BOOLEAN       NOT NULL,
+    free_internet   BOOLEAN       NOT NULL,
+    free_parking    BOOLEAN       NOT NULL,
+    reviews         JSONB         NULL, -- Storing reviews as JSONB for flexibility
+    public_likes    TEXT[]        NULL  -- Array of public likes
+);
+
+-- Details of the "reviews" field:
+-- Each review is a JSON object with the following structure:
+-- {
+--     "content": TEXT,
+--     "ratings": {
+--         "Service": INT,
+--         "Cleanliness": INT,
+--         "Overall": INT,
+--         "Value": INT,
+--         "Location": INT,
+--         "Rooms": INT,
+--         "Business service (e.g., internet access)": INT,
+--         "Check in / front desk": INT
+--     },
+--     "author": TEXT,
+--     "date": TIMESTAMP
+-- }

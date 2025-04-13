@@ -1,0 +1,23 @@
+CREATE TABLE `travel-sample`.`inventory`.`route` (
+    id                  INT           NOT NULL PRIMARY KEY,
+    type                TEXT          NOT NULL,
+    airline             TEXT          NOT NULL,
+    airlineid           TEXT          NOT NULL,
+    sourceairport       TEXT          NOT NULL,
+    destinationairport  TEXT          NOT NULL,
+    stops               INT           NOT NULL,
+    equipment           TEXT          NULL,
+    distance            NUMERIC(10, 6) NOT NULL,
+    schedule            JSON          NULL -- Storing the nested schedule array as JSON for flexibility
+);
+
+
+-- Join Information:
+-- The `route` collection can be joined with the `airline` collection using the condition:
+-- route.airline = airline.iata
+-- This allows you to retrieve additional details about the airline, such as its name, callsign, and country.
+-- Example SQL++ query for the join:
+-- SELECT r.*, a.name AS airline_name, a.callsign, a.country
+-- FROM `travel-sample`.`inventory`.`route` r
+-- JOIN `travel-sample`.`inventory`.`airline` a
+-- ON r.airline = a.iata;

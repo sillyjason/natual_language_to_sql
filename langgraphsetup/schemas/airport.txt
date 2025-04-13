@@ -1,0 +1,13 @@
+CREATE TABLE `travel-sample`.`inventory`.`airport` (
+    id            INT     NOT NULL PRIMARY KEY,
+    type          TEXT    NOT NULL,
+    airportname   TEXT    NOT NULL,
+    city          TEXT    NOT NULL,
+    country       TEXT    NOT NULL,
+    faa           TEXT    NULL,
+    icao          TEXT    NULL,
+    tz            TEXT    NULL,
+    geo_lat       NUMERIC(10, 6) NOT NULL,
+    geo_lon       NUMERIC(10, 6) NOT NULL,
+    geo_alt       INT     NOT NULL
+);

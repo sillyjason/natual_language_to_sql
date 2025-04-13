@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "nl_to_sql"
+version = "0.1.0"
+description = "A project for natural language to SQL conversion"
+authors = ["Jason Cao <sillyjason.cao@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.12.7"
+langchain = "^0.3.23"
+python-dotenv = "^1.1.0"
+langgraph = "^0.3.27"
+langchain-openai = "^0.3.12"
+langgraph-checkpoint-sqlite = "^2.0.6"
+
+[tool.poetry.dev-dependencies]

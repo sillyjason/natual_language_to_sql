@@ -1,0 +1,9 @@
+CREATE TABLE `travel-sample`.`inventory`.`airline` (
+    id        INT    NOT NULL PRIMARY KEY,
+    type      TEXT   NOT NULL,
+    name      TEXT   NOT NULL,
+    iata      TEXT   NULL,
+    icao      TEXT   NULL,
+    callsign  TEXT   NULL,
+    country   TEXT   NOT NULL
+);
