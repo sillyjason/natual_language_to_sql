@@ -12,13 +12,24 @@ Then download the [travel-sample](https://docs.couchbase.com/server/current/mana
 
 ## How it's done 
 
+![image](https://github.com/user-attachments/assets/3cceceb4-5e0d-4c39-8e81-42ce73b239a0)
 
 
 ## Test Run
 
-Run app.py. Throw it couple of questions! 
+Run app.py to start getting answers on your data.
 
-Ask couple of relevant questions first. Look at the sample documents for ideas.
+Ask couple of relevant questions first. Look at the sample documents for ideas. Check out the logs for more details. 
+
+![image](https://github.com/user-attachments/assets/352301d3-689f-422c-a477-295f2e464f85)
+
+Here are some questions that worked for me: 
+
+"How many hotels are there in our database?"
+
+For JOINs:
+
+"Give me the names of airline that operates flight from JFK airport"
 
 Try also ask irrelevant questions! 
 
