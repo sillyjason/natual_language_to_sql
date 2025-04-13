@@ -25,14 +25,13 @@ Ask couple of relevant questions first. Look at the sample documents for ideas. 
 
 Here are some questions that worked for me: 
 
-"How many hotels are there in our database?"
+**"How many hotels are there in our database?"**
 
 For JOINs:
 
-"Give me the names of airline that operates flight from JFK airport"
+**"Give me the names of airline that operates flight from JFK airport"**
 
 Try also ask irrelevant questions! 
 
-
-
+**"Who's Bruce Lee?"**
 
